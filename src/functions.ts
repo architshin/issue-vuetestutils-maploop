@@ -1,14 +1,11 @@
 interface Member {
 	id: number;
-	name: string;
-	email: string;
 	points: number;
-	note?: string;
 }
 
 const memberList = new Map<number, Member>();
-memberList.set(33456, {id: 33456, name: "田中太郎", email: "bow@example.com", points: 35, note: "ちょ〜イケメン。"});
-memberList.set(47783, {id: 47783, name: "鈴木二郎", email: "mue@example.com", points: 53});
+memberList.set(33456, {id: 33456, points: 35});
+memberList.set(47783, {id: 47783, points: 53});
 
 export function getTotalPointsByForEach(): number {
 	let total = 0;
