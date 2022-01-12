@@ -17,7 +17,7 @@ export function getTotalPointsByForEach(): number {
 	return total;
 }
 
-export function getTotalPointsByForOf() {
+export function getTotalPointsByForOf(): number {
 	let total = 0;
 	for(const member of memberList.values()) {
 		total += member.points;
